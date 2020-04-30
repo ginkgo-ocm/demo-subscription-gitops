@@ -1,0 +1,13 @@
+# Datacenter: 03
+# Rack: 4
+# Chasis: 4
+# Blade: 4
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: dc03r4c4b4-titanx-ml
+spec:
+  bmc:
+    address: 4.4.4.4
+    credentialsName: dc01r3c3b2-powerflex390-bmc-secret
+  bootMACAddress: "00:33:33:22:44:00"
