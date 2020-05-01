@@ -1,0 +1,9 @@
+apiVersion: inventory.open-cluster-management.io/v1alpha1
+kind: BareMetalAsset
+metadata:
+  name: ginkgo-redfish-worker-1
+spec:
+  bmc:
+    address: redfish://192.100.133.1:8000/redfish/v1/Systems/89898bdb-1eba-45c5-8342-fff1ec388e96
+    credentialsName: dc01r3c3b2-powerflex390-bmc-secret
+  bootMACAddress: "52:10:11:12:f1:20"
